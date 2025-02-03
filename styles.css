@@ -2,6 +2,11 @@
   --color-background: #f0f0f0;
 }
 
+@font-face {
+  font-family: ;
+  src: url();
+}
+
 h1 {
   justify-self: center;
 }
@@ -13,13 +18,51 @@ h1 {
   justify-content: space-around;
 }
 
-/* main {
-  border: 2px solid pink;
-} */
+main {
+  /* border: 2px solid red; */
+}
+
+.main-aside-container {
+  /* border: 2px solid pink; */
+  display: flex;
+  /* justify-content: space-around; */
+}
 
 .certificate {
   background-color: var(--color-background);
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  width: 60rem;
+  /* margin-left: 5%; */
+}
+
+.cert-section1 {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-top: 4%;
+  /* border: 2px solid red; */
+}
+
+.cert-section1 hr {
+  border: 1px solid black;
+  width: 50%;
+}
+
+.cert-section2 {
+  margin-bottom: 4%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row hr {
+  border: 1px solid black;
+  width: 30%;
+}
+
+aside {
 }
