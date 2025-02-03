@@ -3,12 +3,34 @@
 }
 
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: Leckerli One;
+  src: url(/fonts/LeckerliOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Libre Bodoni;
+  src: url(/fonts/LibreBodoni-VariableFont_wght.ttf);
 }
 
 h1 {
   justify-self: center;
+  font-family: ;
+}
+
+h2 {
+  font-family: ;
+}
+
+h3 {
+  font-family: Leckerli One;
+}
+
+h4 {
+  font-family: Libre Bodoni;
+}
+
+.certificate p {
+  /* font-family: Libre Bodoni; */
 }
 
 .container-h2 {
