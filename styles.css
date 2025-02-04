@@ -35,7 +35,7 @@ h3 {
     #dcd38b 76%,
     #c3923d 84.5%
   );
-  font-size: 70px;
+  font-size: 80px;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -44,7 +44,7 @@ h3 {
   and the bg gradient shows
   and inline-block is to prevent possible problems where gradient
   doesn't appear right */
-  margin-bottom: 0;
+  margin-bottom: 2%;
   margin-top: 2%;
 }
 
@@ -52,6 +52,7 @@ h4 {
   font-family: Libre Bodoni;
   color: var(--color-gold);
   font-size: 40px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -75,6 +76,7 @@ main {
 .main-aside-container {
   /* border: 2px solid pink; */
   display: flex;
+  justify-content: space-between;
   /* justify-content: space-around; */
 }
 
@@ -82,22 +84,28 @@ main {
   background-color: var(--color-background);
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  width: 60rem;
+  width: 70rem;
   /* margin-left: 5%; */
+}
+
+.cert-sect-1-2 {
+  border: 2px solid var(--color-gold);
+  margin: 3%;
+  background-image: url(/images/vector-gold-tleft.png),
+    url(/images/vector-gold-tright.png), url(/images/vector-gold-bleft.png), url(/images/vector-gold-bright.png);
+  background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 15%;
 }
 
 .cert-section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4%;
-  border-top: 2px solid var(--color-gold);
-  background-image: url(/images/vector-gold-tleft.png),
-    url(/images/vector-gold-tright.png);
-  background-position: top left, top right;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 20%;
+}
+
+#presented-to-txt {
+  margin-bottom: 8%;
 }
 
 .cert-section1 hr {
@@ -106,33 +114,36 @@ main {
 }
 
 .cert-section2 {
+  /* border: 2px solid blue; */
   margin-bottom: 4%;
-  border-bottom: 2px solid var(--color-gold);
-  background-image: url(/images/vector-gold-bleft.png),
-    url(/images/vector-gold-bright.png);
-  background-position: top left, top right;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 20%;
 }
 
-.row:first-of-type img {
-  /* background-image: url(/images/ribon-gold.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100px; */
-  height: 250px;
+.row1 img {
+  height: 230px;
+  /* margin: 0 10%; */
+  /* border: 2px solid hotpink; */
 }
 
-.row {
+.row1 {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin: 0 10%;
+  /* border: 2px solid hotpink; */
 }
 
-.row hr {
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 10%; */
+  /* border: 2px solid hotpink; */
+}
+
+.row1 hr, .row2 hr {
   border: 1.5px solid var(--color-gold);
-  width: 30%;
-  margin-bottom: 8%;
+  width: 25%;
 }
 
 aside {
+  /* border: 2px solid blue; */
 }
