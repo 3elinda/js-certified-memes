@@ -1,8 +1,8 @@
 :root {
   --color-background: #f0f0f0;
-  --color-gold: #8C7132;
+  --color-gold: #8c7132;
   --color-burgundy: #620000;
-  --color-blue: #2B498F;
+  --color-blue: #2b498f;
 }
 
 @font-face {
@@ -26,14 +26,39 @@ h2 {
 
 h3 {
   font-family: Leckerli One;
+  /* font-weight: bold; */
+  background: linear-gradient(
+    90deg,
+    #b3865f 6.5%,
+    #d7a94c 36%,
+    #d6ae4d 52.5%,
+    #dcd38b 76%,
+    #c3923d 84.5%
+  );
+  font-size: 70px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  /* the background-clip is so it applies to the text
+  the transparent part is so the text is transparent
+  and the bg gradient shows
+  and inline-block is to prevent possible problems where gradient
+  doesn't appear right */
+  margin-bottom: 0;
+  margin-top: 2%;
 }
 
 h4 {
   font-family: Libre Bodoni;
+  color: var(--color-gold);
+  font-size: 40px;
+  margin-bottom: 0;
 }
 
 .certificate p {
   font-family: Libre Bodoni;
+  color: var(--color-gold);
+  font-size: 25px;
 }
 
 .container-h2 {
@@ -67,16 +92,35 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 4%;
-  border: 2px solid var(--color-gold);
+  border-top: 2px solid var(--color-gold);
+  background-image: url(/images/vector-gold-tleft.png),
+    url(/images/vector-gold-tright.png);
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20%;
 }
 
 .cert-section1 hr {
-  border: 1px solid black;
+  border: 1.5px solid var(--color-gold);
   width: 50%;
 }
 
 .cert-section2 {
   margin-bottom: 4%;
+  border-bottom: 2px solid var(--color-gold);
+  background-image: url(/images/vector-gold-bleft.png),
+    url(/images/vector-gold-bright.png);
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20%;
+}
+
+.row:first-of-type img {
+  /* background-image: url(/images/ribon-gold.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px; */
+  height: 250px;
 }
 
 .row {
@@ -85,8 +129,9 @@ main {
 }
 
 .row hr {
-  border: 1px solid black;
+  border: 1.5px solid var(--color-gold);
   width: 30%;
+  margin-bottom: 8%;
 }
 
 aside {
