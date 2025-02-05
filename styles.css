@@ -65,26 +65,40 @@ h4 {
 .container-h2 {
   /* border: 2px solid blue; */
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+}
+
+.main-aside-container {
+  /* border: 2px solid pink; */
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-around; */
 }
 
 main {
   /* border: 2px solid red; */
 }
 
-.main-aside-container {
-  /* border: 2px solid pink; */
+.cert-options {
   display: flex;
-  justify-content: space-between;
-  /* justify-content: space-around; */
+  margin-bottom: 2%;
+}
+
+.cert-options img {
+  height: 100px;
+  margin: 0 10px;
+}
+
+.form-btn {
+  height: 50px;
+  width: 170px;
+  align-self: flex-end;
 }
 
 .certificate {
   background-color: var(--color-background);
   display: flex;
   flex-direction: column;
-  width: 70rem;
+  width: 75rem;
   /* margin-left: 5%; */
 }
 
@@ -128,7 +142,7 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 10%;
+  margin: 0 12%;
   /* border: 2px solid hotpink; */
 }
 
