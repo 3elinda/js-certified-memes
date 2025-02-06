@@ -44,6 +44,11 @@ h2 {
 h3 {
   font-family: Leckerli One;
   /* font-weight: bold; */
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.gradient-txt {
   background: linear-gradient(
     90deg,
     #b3865f 6.5%,
@@ -61,18 +66,12 @@ h3 {
   and the bg gradient shows
   and inline-block is to prevent possible problems where gradient
   doesn't appear right */
-  margin-bottom: 2%;
-  margin-top: 2%;
 }
 
 .heading3-two {
   font-family: Libre Bodoni;
 }
 
-.h3-3 {
-  background: black;
-  background-clip: text;
-}
 
 h4 {
   font-family: Libre Bodoni;
@@ -207,7 +206,14 @@ h4 {
   /* border: 2px solid blue; */
 }
 
-.heading3-two,
+.heading3-three {
+    background: black;
+    background-clip: text;
+    font-family: Libre Boldoni;
+    font-size: 80px;
+}
+
+.heading3-three,
 .humbledh4 {
   align-self: flex-start;
   margin-left: 5%;
@@ -242,8 +248,7 @@ h4 {
 
 .row1 img {
   height: 230px;
-  /* margin: 0 10%; */
-  /* border: 2px solid hotpink; */
+
 }
 
 .row1 {
@@ -258,15 +263,10 @@ h4 {
   display: flex;
   justify-content: space-around;
   margin-bottom: 5%;
-  /* align-items: center; */
-  /* margin: 0 12%; */
 }
 
 .row2 {
   display: flex;
-  /* justify-content: space-between; */
-  /* margin: 0 10%; */
-  /* border: 2px solid hotpink; */
 }
 
 .cert3-row2 {
