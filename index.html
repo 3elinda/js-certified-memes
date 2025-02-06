@@ -7,46 +7,99 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- <header></header> -->
     <h1>Certified Memes</h1>
-    <!-- <h2>Create A Certificate</h2> -->
-    <div class="container-h2">
-      <h2>Select A Template</h2>
-    </div>
 
     <div class="main-aside-container">
-      <main>
+      <main class="main-elements">
+        <h2>Select A Template</h2>
+
         <div class="cert-options">
-          <img src="/images/certificate 1.png" alt="certificate1">
-          <img src="/images/certificate 2.png" alt="certificate2">
-          <img src="/images/certificate 3.png" alt="certificate3">
+          <img
+            src="/images/certificate 1.png"
+            alt="certificate1"
+            id="cert-img-1"
+          />
+          <img
+            src="/images/certificate 2.png"
+            alt="certificate2"
+            id="cert-img-2"
+          />
+          <img
+            src="/images/certificate 3.png"
+            alt="certificate3"
+            id="cert-img-3"
+          />
           <button class="form-btn">Fill Form</button>
         </div>
-        <div class="certificate">
+        <div class="certificate certificate1">
           <div class="cert-sect-1-2">
-          <section class="cert-section1">
-            <h3 class="gradient-txt">Congratulations</h3>
-            <h4>Hear Me Out Award</h4>
-            <p id="presented-to-txt">Hereby presented to</p>
-            <hr />
-            <p>For most "Hear me out" this year</p>
-          </section>
-          <section class="cert-section2">
-            <div class="row1">
-              <p>Presented By:</p>
-              <img src="/images/ribon-gold.png" alt="gold-ribbon" />
-              <p>On This Day:</p>
-            </div>
-            <div class="row2">
+            <section class="cert-section1">
+              <h3 class="gradient-txt">Congratulations</h3>
+              <h4>Hear Me Out Award</h4>
+              <p id="presented-to-txt">Hereby presented to</p>
               <hr />
-              <hr />
-            </div>
-          </section>
+              <p>For most "Hear me out" this year</p>
+            </section>
+            <section class="cert-section2">
+              <div class="row1">
+                <p>Presented By:</p>
+                <img src="/images/ribon-gold.png" alt="gold-ribbon" />
+                <p>On This Day:</p>
+              </div>
+              <div class="row2">
+                <hr />
+                <hr />
+              </div>
+            </section>
           </div>
         </div>
-        <!-- <div class="certificate-1"></div>
-      <div class="certificate-2"></div>
-      <div class="certificate-3"></div> -->
+
+        <div class="certificate certificate2">
+          <div class="cert-sect-1-2">
+            <section class="cert-section1">
+              <h3 class="heading3-one heading3-two">CERTIFICATE</h3>
+              <h4 class="heading4-two">OF IF IT WORKS DDON'T TOUCH IT</h4>
+              <p id="presented-to-txt">This certificate is presented to</p>
+              <hr />
+              <p>For most "If it works don't touch it" this year</p>
+            </section>
+            <section class="cert-section2">
+              <div class="row1">
+                <p c>Presented By:</p>
+                <img src="/images/ribon-gold.png" alt="gold-ribbon" />
+                <p>On This Day:</p>
+              </div>
+              <div class="row2">
+                <hr />
+                <hr />
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="certificate certificate3">
+          <div class="cert3-sect-1-2">
+            <section class="cert3-section1">
+              <h3 class="heading3-one heading3-two h3-3">CERTIFICATE</h3>
+              <div class="humbledh4">
+                <h4 class="heading4-three">OF I GOT HUMBLED</h4>
+              </div>
+              <p id="presented-to-txt">This certificate is presented to</p>
+              <hr />
+              <p>For getting humbled the most this year</p>
+            </section>
+            <section class="cert3-section2">
+              <div class="cert3-row1">
+                <p c>Presented By:</p>
+                <p>On This Day:</p>
+              </div>
+              <div class="cert3-row2">
+                <hr />
+                <hr />
+              </div>
+            </section>
+          </div>
+        </div>
       </main>
 
       <!-- <aside>
@@ -57,5 +110,6 @@
         </form>
       </aside> -->
     </div>
+    <script src="memes.js"></script>
   </body>
 </html>
