@@ -29,7 +29,7 @@
             alt="certificate3"
             id="cert-img-3"
           />
-          <button class="form-btn">Fill Form</button>
+          <button id="form-btn">Fill Form</button>
         </div>
         <div class="certificate certificate1">
           <div class="cert-sect-1-2">
@@ -37,14 +37,17 @@
               <h3 class="gradient-txt">Congratulations</h3>
               <h4>Hear Me Out Award</h4>
               <p id="presented-to-txt">Hereby presented to</p>
+              <div class="winner"></div>
               <hr />
               <p>For most "Hear me out" this year</p>
             </section>
             <section class="cert-section2">
               <div class="row1">
                 <p>Presented By:</p>
+                <div class="presented-by"></div>
                 <img src="/images/ribon-gold.png" alt="gold-ribbon" />
                 <p>On This Day:</p>
+                <div class="on-this-day"></div>
               </div>
               <div class="row2">
                 <hr />
@@ -60,14 +63,17 @@
               <h3 class="gradient-txt heading3-two">CERTIFICATE</h3>
               <h4 class="heading4-two">OF IF IT WORKS DDON'T TOUCH IT</h4>
               <p id="presented-to-txt">This certificate is presented to</p>
+              <div class="winner"></div>
               <hr />
               <p>For most "If it works don't touch it" this year</p>
             </section>
             <section class="cert-section2">
               <div class="row1">
-                <p c>Presented By:</p>
+                <p>Presented By:</p>
+                <div class="presented-by"></div>
                 <img src="/images/ribon-gold.png" alt="gold-ribbon" />
                 <p>On This Day:</p>
+                <div class="on-this-day"></div>
               </div>
               <div class="row2">
                 <hr />
@@ -85,13 +91,16 @@
                 <h4 class="heading4-three">OF I GOT HUMBLED</h4>
               </div>
               <p id="presented-to-txt">This certificate is presented to</p>
+              <div class="winner"></div>
               <hr />
               <p>For getting humbled the most this year</p>
             </section>
             <section class="cert3-section2">
               <div class="cert3-row1">
-                <p c>Presented By:</p>
+                <p>Presented By:</p>
+                <div class="presented-by"></div>
                 <p>On This Day:</p>
+                <div class="on-this-day"></div>
               </div>
               <div class="cert3-row2">
                 <hr />
@@ -101,14 +110,22 @@
           </div>
         </div>
 
-        <section class="form-sect">
-          <form action="">
-            <label for="name">Recipient name:</label><br />
-            <input type="text" id="name" name="name" /> <br />
-            <label for=""></label>
-            <input type="submit" />
-          </form>
+        <section class="form-sect" id="form-section">
+          <div class="h2-form-container">
+            <h2>Please Fill Form</h2>
+            <div class="form-container">
+              <form class="form" action="">
+                <label for="name">Recipient name:</label><br />
+                <input type="text" id="name" name="name" /> <br />
+                <label for="issuedby">Issued by:</label><br />
+                <input type="text" id="issuedby" name="issuedby" /><br />
+                <input type="submit" id="submit-btn" />
+              </form>
+            </div>
+          </div>
         </section>
+
+        <button id="print-btn">Print Certificate</button>
       </main>
     </div>
     <script src="memes.js"></script>

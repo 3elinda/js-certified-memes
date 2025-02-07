@@ -72,7 +72,6 @@ h3 {
   font-family: Libre Bodoni;
 }
 
-
 h4 {
   font-family: Libre Bodoni;
   color: var(--color-gold);
@@ -141,7 +140,7 @@ h4 {
   margin-left: 0;
 }
 
-.form-btn {
+#form-btn {
   height: 50px;
   width: 170px;
   align-self: flex-end;
@@ -150,6 +149,7 @@ h4 {
   box-shadow: 7px 4px 2px 0px rgba(0, 0, 0, 0.25);
   background-color: var(--color-btn);
   border: none;
+  cursor: pointer;
 }
 
 .certificate {
@@ -158,7 +158,12 @@ h4 {
   flex-direction: column;
   width: 75rem;
   border: 2px solid transparent;
+  /* display: none; */
 }
+
+/* .certificate.visible {
+  display: block;
+} */
 
 .certificate1 {
   visibility: visible;
@@ -207,10 +212,10 @@ h4 {
 }
 
 .heading3-three {
-    background: black;
-    background-clip: text;
-    font-family: Libre Boldoni;
-    font-size: 80px;
+  background: black;
+  background-clip: text;
+  font-family: Libre Boldoni;
+  font-size: 80px;
 }
 
 .heading3-three,
@@ -248,7 +253,6 @@ h4 {
 
 .row1 img {
   height: 230px;
-
 }
 
 .row1 {
@@ -284,4 +288,120 @@ h4 {
 .cert3-row2 hr {
   border: 1.5px solid var(--color-blue);
   width: 35%;
+}
+
+.form-sect {
+  background-color: #c7ccdd;
+  height: 50rem;
+  width: 75rem;
+  display: none;
+}
+
+/* #form-section {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+} */
+
+.h2-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+}
+
+.form-container {
+  background-color: var(--color-background3);
+  height: 30%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  font-size: 30px;
+  margin-left: 10%;
+  /* border: 2px solid blue; */
+}
+
+#print-btn {
+  display: none;
+}
+
+@media print {
+  /* to print certificates with colors on 
+  print tab go to "More settings" and 
+  check the "Background graphics */
+  @page {
+    /* size: 11in 8.5in; */
+    size: landscape;
+    margin: 0;
+  }
+
+  body * {
+    /* visibility: hidden; */
+    /* to hide unnecessary elements when it prints */
+    /* margin: 0;
+    padding: 0; */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .cert-options,
+  h1,
+  h2 {
+    visibility: hidden;
+  }
+
+  /* to show only the selected certificate */
+  /* .certificate2 {
+    background-color: var(--color-background2) !important;
+    display: block;
+  } */
+
+  .certificate {
+    visibility: visible;
+    /* position: relative; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 99vh;
+    width: 100vw;
+    /* page-break-before: always; */
+    /* page-break-after: always; */
+    /* page-break-inside: avoid; */
+
+    /* background-color: var(--color-background); */
+  }
+
+  /* .certificate2 {
+    visibility: visible;
+    background-color: var(--color-background2);
+  } */
+
+  /* .certificate h3, .certificate h4, .certificate p {
+    font-size: ;
+  } */
+
+  .certificate img {
+    max-width: 100%;
+    display: block;
+    /* so it behaves like block elements */
+  }
+
+  /* .cert-sect-1-2 {
+    display: block;
+  } */
 }
