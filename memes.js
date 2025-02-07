@@ -17,6 +17,9 @@ btn1.addEventListener("click", function () {
   form.style.display = "none";
   chosen = certificate1;
 });
+// when btn1 is clicked which is the first certificate image 
+// then certificate1 which is the class = "certificate1" displays 
+// block and the rest of the certifcates display none so they don't show
 
 btn2.addEventListener("click", function () {
   certificate1.style.display = "none";
@@ -41,6 +44,14 @@ fillFormBtn.addEventListener("click", function () {
   form.style.display = "block";
 });
 
+// fillForm is the class = "form"
+// eve.preventDefault(); is so that when submit is cliked the page doesn't refresh. 
+//  -It cancels the default action
+// .value; is getting tha value of the input
+// winners.forEach((winner) => {
+//   winner.innerHTML = inputName;
+// }); for each div with the class = "winner" the input of the form is inserted in that div
+// for example if the input was John Doe then it is going to go in the div with the class "winner"
 const fillForm = document.querySelector(".form");
 
 fillForm.addEventListener("submit", function (event) {
@@ -76,3 +87,4 @@ const printButton = document.getElementById("print-btn");
 printButton.addEventListener("click", function () {
   window.print();
 });
+// when the printButton is clicked then the print dialog box is going to open up
